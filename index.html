@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.plot.ly/plotly-2.8.3.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+    <h1>Collatz Conjecture Visualization</h1>
+    <p>Note that the visualization only works for input value larger than 2, otherwise the number of steps involved will either be 0 or 1, which cannot be properly visualised or animated on the graph.</p>
+    <h3>Enter a positive integer:</h3>
+    <input id="userInput" type="text" placeholder="A positive integer...">
+    <button onclick="calculateCollatz()">Submit</button>
+    <div id="pathway"></div>
+    <div id="plot"></div>
+    <script src="collatz.js"></script>
+</body>
+</html>
